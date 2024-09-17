@@ -13,6 +13,44 @@ body {
   font-family: "Pacifico";
 }
 
+.backdrop {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.toggle-button {
+  width: 3rem;
+  background: white;
+  border: none;
+  cursor: pointer;
+  padding-top: 0;
+  padding-bottom: 0;
+  vertical-align: middle;
+  border-radius: 5px;
+}
+
+.toggle-button:focus {
+  outline: none;
+}
+
+.toggle-button__bar {
+  width: 100%;
+  height: 0.15rem;
+  background: black;
+  display: block;
+  margin: 0.6rem 0;
+}
+
+.main-nav {
+    display: none;
+  }
+
 .main-header {
   display: flex;
   justify-content: space-between;
@@ -25,7 +63,7 @@ body {
 }
 
 .main_header__brand {
-  font-size: 200%;
+  font-size: 150%;
 }
 
 .main-nav__items {
@@ -52,6 +90,46 @@ body {
   transition: padding 0.5s;
 }
 
+.mobile-nav {
+  display: none;
+  position: fixed;
+  z-index: 300;
+  top: 0;
+  left: 0;
+  background: white;
+  width: 60%;
+  height: 100vh;
+}
+
+.mobile-nav__items {
+  width: 90%;
+  height: 100%;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-nav__item {
+  margin: 1rem 0;
+}  
+
+.mobile-nav__item a {
+  font-size: 1.5rem;
+}
+
+.open {
+    display: block !important;
+}
+
+
+.my-img {
+  height: 900px;
+}
+
 #my-img-container {
   max-height: 80vh;
   overflow: hidden;
@@ -59,14 +137,10 @@ body {
   border-radius: 30px;
   animation-name: slideMe;
   animation-duration: 4s;
-  animation-iteration-count: 3;
+  animation-iteration-count: 1;
   animation-direction: alternate-reverse;
   /* animation-delay: -2s; */
   animation-timing-function: linear;
-}
-
-.my-img {
-  height: 900px;
 }
 
 #about-me {
@@ -76,11 +150,43 @@ body {
   width: 100vw;
 }
 
+.about-me-writeup {
+  position: absolute;
+  z-index: 100;
+  top: 53%;
+  left: 10%;
+  background-color: transparent;
+}
+
 #about-me article {
   line-height: 1;
   font-family: "Edu AU VIC WA NT Hand", cursive;
   font-optical-sizing: auto;
   margin-right: 1rem;
+}
+
+.about-me-writeup h1,
+.my-name,
+h3 {
+  background-color: transparent;
+  animation-name: colorMe;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  /* animation-delay: -2s; */
+  animation-timing-function: linear;
+}
+
+@keyframes colorMe {
+  0% {
+    color: #ebeff3;
+  }
+  75% {
+    color: #ebeff3;
+  }
+  100% {
+    color: #ebeff3;
+  }
 }
 
 h6 {
@@ -108,58 +214,17 @@ h6 a {
   }
 }
 
-@media (max-width: 40rem) {
+
+@media (min-width: 40rem) {
   .main-nav {
+    display: block;
+  }
+
+  .about-me-writeup{
+    position: static;
+  }
+
+  .toggle-button-div {
     display: none;
-  }
-
-  #about-me {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  #my-img-container {
-    max-height: 80vh;
-    max-width: 100vw;
-    overflow: hidden;
-    position: relative;
-  }
-
-  .about-me-writeup {
-    position: absolute;
-    z-index: 100;
-    top: 55%;
-    left: 10%;
-    background-color: transparent;
-  }
-
-  .about-me-writeup h1,
-  .my-name,
-  h3 {
-    background-color: transparent;
-    animation-name: colorMe;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
-    /* animation-delay: -2s; */
-    animation-timing-function: linear;
-  }
-
-  @keyframes colorMe {
-    0% {
-      color: #ebeff3;
-    }
-    50% {
-      color: hsl(0, 85%, 29%);
-    }
-    75% {
-      color: #ebeff3;
-    }
-    80% {
-      color: #0925449c;
-    }
-    100% {
-      color: #ebeff3;
-    }
   }
 }

@@ -4,50 +4,75 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Obitope Eniola Nathaniel</title>
-
     <link rel="stylesheet" href="sytle.css" />
   </head>
-  <body>
-    <!-- <div class="backdrop"></div> -->
-    <!-- the bar icon -->
-    <!-- <div>
-      <button class="toggle-button">
-        <span class="toggle-button__bar"></span>
-        <span class="toggle-button__bar"></span>
-        <span class="toggle-button__bar"></span>
-      </button>
-      <a href="index.html" class="main_header__brand">.::NielTech::.</a>
-    </div> -->
 
-    <!-- page header -->
+  <body>
+    <div class="backdrop"></div>
+
+    <!-- Toggle Icon for Responsive design -->
     <header class="main-header">
+      <div class="toggle-button-div">
+        <button class="toggle-button">
+          <span class="toggle-button__bar"></span>
+          <span class="toggle-button__bar"></span>
+          <span class="toggle-button__bar"></span>
+        </button>
+      </div>
+
+      <!-- Brand Logo and Name -->
       <div>
         <a href="index.html" class="main_header__brand">.::NielTech::.</a>
       </div>
 
+      <!-- Desktop View Nav Bar -->
       <nav class="main-nav">
         <ul class="main-nav__items">
           <li class="main-nav__item">
             <a href="">About</a>
           </li>
           <li class="main-nav__item">
-            <a href="">Resume</a>
+            <a href="#">Resume</a>
           </li>
           <li class="main-nav__item">
-            <a href="">Services</a>
+            <a href="#">Services</a>
           </li>
           <li class="main-nav__item">
-            <a href="">Skills</a>
+            <a href="#">Skills</a>
           </li>
           <li class="main-nav__item">
-            <a href="">Project</a>
+            <a href="#">Project</a>
           </li>
           <li class="main-nav__item">
-            <a href="">Contact</a>
+            <a href="#">Contact</a>
           </li>
         </ul>
       </nav>
     </header>
+
+    <!-- Mobile View Nav Bar -->
+    <nav class="mobile-nav">
+      <ul class="mobile-nav__items">
+        <li class="mobile-nav__item">
+          <a href="#">About</a>
+        </li>
+         <li class="mobile-nav__item"></li>
+          <a href="#">Resume</a>
+        </li>
+         <li class="mobile-nav__item"></li>
+          <a href="#">Services</a>
+        </li>
+         <li class="mobile-nav__item"></li>
+          <a href="#">Skills</a>
+        </li>
+         <li class="mobile-nav__item"></li>
+          <a href="#">Project</a>
+        </li>
+        <li class="mobile-nav__item"></li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+     </nav>
 
     <main>
       <section id="about-me">
@@ -68,5 +93,7 @@
     </main>
 
     <!-- <object data="pdf.pdf" type="application/pdf" width="500" height="700"></object> -->
+
+  <script src="app.js"></script>
   </body>
 </html>
