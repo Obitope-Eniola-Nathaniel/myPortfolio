@@ -134,8 +134,8 @@ body {
 #my-img-container {
   max-height: 80vh;
   overflow: hidden;
-  box-shadow: 5px 5px 20px white;
-  border-radius: 30px;
+  box-shadow: 5px 5px 20px #000000;
+  border-radius: 10px;
   animation-name: slideMe;
   animation-duration: 4s;
   animation-iteration-count: 1;
