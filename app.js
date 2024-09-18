@@ -9,5 +9,7 @@ const displayMobileNavBar = () => {
 
 
 
+
+
 toggleButton.addEventListener("click", displayMobileNavBar);
 backDrop.addEventListener("click", displayMobileNavBar);
