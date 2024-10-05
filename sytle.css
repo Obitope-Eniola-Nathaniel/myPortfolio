@@ -3,7 +3,7 @@
 
 * {
   box-sizing: border-box;
-  color: white;
+  /* color: white; */
 }
 
 body {
@@ -11,10 +11,9 @@ body {
   padding: 0;
   font-family: "Pacifico";
   background-color: #17202a;
-  background-image: url(cool_back.avif);
+  background-image: url(./images/cool_back.avif);
   background-size: cover;
-  width: 100vw;
-  height: 100vh;
+  color: #fff;
 }
 
 .backdrop {
@@ -51,8 +50,8 @@ body {
 }
 
 .main-nav {
-    display: none;
-  }
+  display: none;
+}
 
 .main-header {
   display: flex;
@@ -62,14 +61,12 @@ body {
   font-weight: 200;
   font-style: normal;
   /* margin: 0 10px; */
-  margin-bottom: 0.3rem;
+  margin: 0 2rem;
   align-items: center;
-  width: 100vw;
 }
 
 .main-nav__items {
   display: flex;
-  justify-content: space-evenly;
   list-style: none;
 }
 
@@ -81,6 +78,7 @@ body {
 .main_header__brand,
 .main-nav__items a {
   text-decoration: none;
+  color: #fff;
 }
 
 .main-nav__items a:hover {
@@ -121,22 +119,22 @@ body {
 
 .mobile-nav__item {
   margin: 1rem 0;
-}  
+}
 
 .mobile-nav__item a {
-  font-size: 1.0rem;
+  font-size: 1rem;
+  color: #fff;
 }
 
 .mobile-nav__item > i {
-  font-size: 1.0rem;
+  font-size: 1rem;
   margin-right: 0.2rem;
 }
 
 .open {
-    display: block !important;
-    transform: translateX(0%);
+  display: block !important;
+  transform: translateX(0%);
 }
-
 
 .my-img {
   height: 900px;
@@ -160,29 +158,29 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90vw;
+  width: 95vw;
   border: 2px solid #fff;
   border-radius: 10px;
   margin: 0 auto;
-  box-shadow: 2px 2px 2px  #fff;
+  box-shadow: 2px 2px 2px #fff;
   background-color: rgba(0, 0, 0, 0.9);
 }
 
 .about-me-writeup {
   position: absolute;
   z-index: 100;
-  top: 50%;
+  top: 48%;
   left: 10%;
   background-color: transparent;
   animation-name: slideMe1;
   animation-iteration-count: 1;
-   animation-duration: 1s;
+  animation-duration: 1s;
   animation-direction: alternate-reverse;
   animation-timing-function: linear;
 }
 
 #about-me article {
-  line-height: 1;
+  line-height: 0.5;
   font-family: "Edu AU VIC WA NT Hand", cursive;
   font-optical-sizing: auto;
   margin-right: 1rem;
@@ -220,7 +218,7 @@ h6 a {
 }
 
 @keyframes slideMe1 {
-   0% {
+  0% {
     /* transform: rotate(-50deg); */
   }
   50% {
@@ -231,14 +229,14 @@ h6 a {
   }
 }
 
-
 @media (min-width: 40rem) {
   .main-nav {
     display: block;
   }
 
-  .about-me-writeup{
+  .about-me-writeup {
     position: static;
+    padding-left: none;
   }
 
   .toggle-button-div {
@@ -246,10 +244,8 @@ h6 a {
   }
 
   .main_header__brand {
-  font-size: 150%;
+    font-size: 150%;
   }
-
 }
-
 
 /* ABOUT ME STYLING */

@@ -1,0 +1,53 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.project-img {
+    height: 280px;
+    width: 380px;
+    border-radius: 20px;
+    margin: 0.5rem;
+}
+
+.project {
+    border: 2px solid #fff;
+    margin: auto;
+    margin-bottom: 1rem;
+    border-radius: 20px;
+}
+
+.project:hover {
+    background-color: #fff;
+}
+
+.project h1 {
+    text-align: center;
+}
+
+.project a {
+    color: #fff;
+}
+
+.project a:hover {
+    color: #000;
+}
+
+/* .project h1:hover {
+    color: #000;
+} */
+
+
+@media (max-width: 40rem) {
+    .project  {
+        max-width: 80%;
+        overflow: hidden;
+    }
+
+    .project-img {
+        height: 200px;
+        width: 250px;
+    }
+
+}
