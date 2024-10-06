@@ -14,7 +14,6 @@ body {
   background-image: url(./images/cool_back.avif);
   background-size: cover;
   color: #fff;
-  position: fixed;
 }
 
 .backdrop {
